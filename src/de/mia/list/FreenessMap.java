@@ -50,7 +50,7 @@ public class FreenessMap extends FragmentActivity implements RoutingListener,
 		Fragment fragment = fmanager.findFragmentById(R.id.map);
 		SupportMapFragment supportmapfragment = (SupportMapFragment) fragment;
 		mMap = supportmapfragment.getMap();
-		mMap.setMyLocationEnabled(true);
+		//mMap.setMyLocationEnabled(true);
 		mMap.setOnMarkerClickListener(this);
 		
 		String str = getIntent().getStringExtra("lat");
